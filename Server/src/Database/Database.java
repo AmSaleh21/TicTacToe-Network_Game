@@ -5,7 +5,6 @@
  */
 package Database;
 
-import java.security.Timestamp;
 import Helper_Package.Game;
 import java.sql.Connection;
 import java.sql.DriverManager;
@@ -17,20 +16,18 @@ import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
 import Helper_Package.Player;
 import static com.mysql.jdbc.StringUtils.isNullOrEmpty;
-import java.security.Timestamp;
-import java.util.Date;
 
 public class Database {
 
-     static Connection con =null;
-    static String db_name="xo_netwok_game";
-    static String url="jdbc:mysql://localhost:3306/"+db_name;
-    static String username="root";//////your name
-    static String password="";//////your password
+    static Connection con = null;
+    static String db_name = "xo_network_game";
+    static String url = "jdbc:mysql://localhost:3306/" + db_name;
+    static String username = "[ph your db login name]";//////your db login name
+    static String password = "[PH your db login password";//////your db login password
 
     //this function created to connect to the database
-    public static void dbConnect() throws ClassNotFoundException, InstantiationException, IllegalAccessException, SQLException {
-        Class.forName("com.mysql.jdbc.Driver").newInstance();
+    public static void dbConnect() throws ClassNotFoundException, InstantiationException, IllegalAccessException, SQLException  {
+        Class.forName("com.mysql.cj.jdbc.Driver").newInstance();
         con = DriverManager.getConnection(url, username, password);
     }
 
