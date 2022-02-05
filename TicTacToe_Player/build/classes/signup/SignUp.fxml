@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane id="AnchorPane" opacity="0.86" prefHeight="600.0" prefWidth="1000.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="signup.SignUpController">
+   <children>
+      <ImageView fitHeight="600.0" fitWidth="1000.0" pickOnBounds="true">
+         <image>
+            <Image url="@X_O2.jpg" />
+         </image>
+      </ImageView>
+      <AnchorPane layoutX="346.0" layoutY="13.0" opacity="0.86" prefHeight="565.0" prefWidth="335.0" style="-fx-background-color: #fbf8bd;">
+         <children>
+            <Label fx:id="errorMessage" layoutX="94.0" layoutY="124.0" prefHeight="38.0" prefWidth="199.0" text="Invalid User Name!" textAlignment="CENTER" textFill="#fc0000">
+               <font>
+                  <Font name="Bodoni MT Bold" size="20.0" />
+               </font>
+            </Label>
+            <TextField fx:id="userName" layoutX="51.0" layoutY="180.0" prefHeight="31.0" prefWidth="250.0" promptText="User Name" />
+            <Text fx:id="checkUserName" disable="true" fill="#c31818" layoutX="51.0" layoutY="177.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Enter Use Name" visible="false" />
+            <TextField fx:id="Email" layoutX="50.0" layoutY="242.0" prefHeight="31.0" prefWidth="250.0" promptText="Email" />
+            <Text fx:id="checkEmail" disable="true" fill="#d01717" layoutX="50.0" layoutY="239.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Enter Email" visible="false" />
+            <PasswordField fx:id="Password" layoutX="50.0" layoutY="318.0" prefHeight="31.0" prefWidth="250.0" promptText="Password" />
+            <Text fx:id="checkPassword" disable="true" fill="#c91717" layoutX="50.0" layoutY="315.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Enter Password" visible="false" />
+            <PasswordField fx:id="confirmationPassword" layoutX="50.0" layoutY="383.0" prefHeight="31.0" prefWidth="250.0" promptText="Password Confirmation" />
+            <Text fx:id="checkcConfirmationPassword" disable="true" fill="#d00f0f" layoutX="50.0" layoutY="381.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Password doesn't match" visible="false" />
+            <Button layoutX="63.0" layoutY="465.0" mnemonicParsing="false" onAction="#register" prefHeight="55.0" prefWidth="210.0" style="-fx-background-radius: 80px; -fx-background-color: #148c7c;" text="Sing Up" textFill="WHITE">
+               <font>
+                  <Font name="Bauhaus 93" size="27.0" />
+               </font>
+            </Button>
+            <Label layoutX="48.0" layoutY="-15.0" prefHeight="119.0" prefWidth="256.0" text="Sign Up" textFill="#148c7c">
+               <font>
+                  <Font name="Forte" size="64.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+      <Button alignment="CENTER_RIGHT" layoutX="790.0" layoutY="517.0" mnemonicParsing="false" onAction="#back" prefHeight="50.0" prefWidth="125.0" style="-fx-background-color: #41766f; -fx-background-radius: 80px;" text="Back" textFill="WHITE">
+         <font>
+            <Font name="Bauhaus 93" size="24.0" />
+         </font>
+      </Button>
+      <ImageView fitHeight="36.0" fitWidth="37.0" layoutX="806.0" layoutY="524.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@back2-white.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

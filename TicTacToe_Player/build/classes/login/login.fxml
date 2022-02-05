@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!--<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>-->
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane id="AnchorPane" prefHeight="593.0" prefWidth="980.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="login.loginController">
+   <children>
+      <ImageView fitHeight="664.0" fitWidth="1050.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@b16.jpg" />
+         </image>
+      </ImageView>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#0d0d0d" height="664.0" layoutX="1.0" opacity="0.0" stroke="#4d7c46" strokeType="INSIDE" width="995.0" />
+<!--      <FontAwesomeIconView fill="WHITE" glyphName="USER" layoutX="331.0" layoutY="225.0" size="35" wrappingWidth="28.000004559755325" />-->
+      <Label layoutX="149.0" layoutY="-13.0" prefHeight="104.0" prefWidth="749.0" styleClass="buttonXO" text="Welcome to Tic Tac Toe Game" textAlignment="RIGHT" textFill="#41766f">
+         <font>
+            <Font name="Forte" size="57.0" />
+         </font>
+      </Label>
+      <AnchorPane layoutX="346.0" layoutY="78.0" opacity="0.71" prefHeight="577.0" prefWidth="335.0" style="-fx-background-color: #fbf8bd;">
+         <children>
+            <Label fx:id="errorMessage" layoutX="82.0" layoutY="44.0" prefHeight="38.0" prefWidth="171.0" text="Wrong credentials!" textAlignment="CENTER" textFill="#fc0000">
+               <font>
+                  <Font name="Bodoni MT Bold" size="20.0" />
+               </font>
+            </Label>
+            <TextField fx:id="loginUserName" layoutX="30.0" layoutY="149.0" prefHeight="31.0" prefWidth="276.0" promptText="User name" style="-fx-border-color: #ff0000;">
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+            </TextField>
+            <Text fx:id="checkusername" disable="true" fill="RED" layoutX="30.0" layoutY="133.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Please Enter Your User Name" visible="false" wrappingWidth="275.99999549239874" />
+            <PasswordField fx:id="loginPassword" layoutX="30.0" layoutY="233.0" prefHeight="31.0" prefWidth="276.0" promptText="Password" style="-fx-border-color: #ff0000;" />
+            <Text fx:id="checkpassword" disable="true" fill="RED" layoutX="30.0" layoutY="229.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Please Enter Your Password" visible="false" />
+            <ImageView fitHeight="158.0" fitWidth="197.0" layoutX="95.0" layoutY="330.0" opacity="0.53" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@b4.png" />
+               </image>
+            </ImageView>
+      <!--      <FontAwesomeIconView fill="WHITE" glyphName="LOCK" layoutX="332.0" layoutY="298.0" size="35" wrappingWidth="28.000004559755325" />-->
+            <Button fx:id="loginButton" layoutX="92.0" layoutY="392.0" mnemonicParsing="false" onAction="#login" prefHeight="104.0" prefWidth="171.0" style="-fx-background-color: rgba(142, 213, 87, 0.0);;" text="Login" textFill="#1b5065">
+               <font>
+                  <Font name="System Bold" size="37.0" />
+               </font></Button>
+         </children>
+      </AnchorPane>
+      <Label layoutX="709.0" layoutY="350.0" prefHeight="74.0" prefWidth="229.0" styleClass="buttonXO" text="Don't Have an account?" textAlignment="RIGHT" textFill="#103d43">
+         <font>
+            <Font name="Bauhaus 93" size="21.0" />
+         </font>
+      </Label>
+      <Button fx:id="signupButton" layoutX="709.0" layoutY="360.0" mnemonicParsing="false" onAction="#signup" prefHeight="147.0" prefWidth="223.0" style="-fx-background-color: rgba(142, 213, 87, 0.0);;" />
+      <ImageView fitHeight="101.0" fitWidth="134.0" layoutX="771.0" layoutY="406.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@online-registration.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

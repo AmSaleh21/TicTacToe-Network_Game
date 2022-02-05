@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane id="AnchorPane" prefHeight="605.0" prefWidth="1114.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="selectionmode.SelectionModeController">
+   <children>
+      <ImageView fitHeight="617.0" fitWidth="1114.0" pickOnBounds="true">
+         <image>
+            <Image url="@wood-g1441d1944_1920.jpg" />
+         </image>
+      </ImageView>
+      <AnchorPane layoutX="400.0" layoutY="100.0" opacity="0.7" prefHeight="500.0" prefWidth="350.0" style="-fx-background-color: #fbf8bd;" />
+      <Button layoutX="375.0" layoutY="171.0" mnemonicParsing="false" onAction="#singlePlayer" prefHeight="86.0" prefWidth="358.0" style="-fx-background-color: rgba(142, 213, 87, 0.0);" text="Single Player" textFill="#216974">
+         <font>
+            <Font name="Bauhaus 93" size="35.0" />
+         </font>
+         <graphic>
+            <ImageView fitHeight="68.0" fitWidth="72.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@single_player.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Button>
+      <Button layoutX="381.0" layoutY="345.0" mnemonicParsing="false" onAction="#multiplayer" prefHeight="86.0" prefWidth="358.0" style="-fx-background-color: rgba(142, 213, 87, 0.0);" text="Multi Players" textFill="#216974">
+         <font>
+            <Font name="Bauhaus 93" size="35.0" />
+         </font>
+         <graphic>
+            <ImageView fitHeight="58.0" fitWidth="63.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@multi2.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Button>
+      <Button layoutX="100.0" layoutY="459.0" mnemonicParsing="false" onAction="#logout" prefHeight="139.0" prefWidth="166.0" style="-fx-background-color: rgba(142, 213, 87, 0.0);" textFill="#f5f5f5">
+         <font>
+            <Font name="System Bold" size="33.0" />
+         </font>
+         <graphic>
+            <ImageView fitHeight="124.0" fitWidth="152.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@logout.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Button>
+      <Text fx:id="logedInUserName" fill="#2f494d" layoutX="226.0" layoutY="57.0" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="194.00000643730164">
+         <font>
+            <Font name="Forte" size="54.0" />
+         </font>
+      </Text>
+      <Text fill="#2f494d" layoutX="9.0" layoutY="58.0" strokeType="INSIDE" strokeWidth="0.0" text="Hello :" textAlignment="CENTER" wrappingWidth="226.99999570846558">
+         <font>
+            <Font name="Forte" size="54.0" />
+         </font>
+      </Text>
+      <Button fx:id="gameRecordsButton" layoutX="873.0" layoutY="506.0" mnemonicParsing="false" onAction="#gameRecords" prefHeight="53.0" prefWidth="168.0" style="-fx-background-color: #A34828; -fx-background-radius: 28px;" text="Records" textFill="#110000">
+         <font>
+            <Font name="Bauhaus 93" size="25.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>

@@ -1,0 +1,287 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="recordlist.PlayRecordedGameController">
+    <children>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="147.0" layoutX="242.0" layoutY="112.0" stroke="#ae6fc9" strokeType="INSIDE" strokeWidth="5.0" width="145.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="147.0" layoutX="543.0" layoutY="112.0" stroke="#ae6fc9" strokeType="INSIDE" strokeWidth="5.0" width="145.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="147.0" layoutX="393.0" layoutY="416.0" stroke="#ae6fc9" strokeType="INSIDE" strokeWidth="5.0" width="145.0" />
+      <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="384.0" layoutY="-19.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@vs%20new.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="413.0" fitWidth="317.0" layoutX="9.0" layoutY="364.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@x-o%20new.png" />
+         </image>
+      </ImageView>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="147.0" layoutX="243.0" layoutY="416.0" stroke="#ae6fc9" strokeType="INSIDE" strokeWidth="5.0" width="145.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="147.0" layoutX="543.0" layoutY="264.0" stroke="#ae6fc9" strokeType="INSIDE" strokeWidth="5.0" width="145.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="147.0" layoutX="393.0" layoutY="263.0" stroke="#ae6fc9" strokeType="INSIDE" strokeWidth="5.0" width="145.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="147.0" layoutX="242.0" layoutY="264.0" stroke="#ae6fc9" strokeType="INSIDE" strokeWidth="5.0" width="145.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="147.0" layoutX="543.0" layoutY="416.0" stroke="#ae6fc9" strokeType="INSIDE" strokeWidth="5.0" width="145.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="147.0" layoutX="393.0" layoutY="112.0" stroke="#ae6fc9" strokeType="INSIDE" strokeWidth="5.0" width="145.0" />
+      <Label layoutX="35.0" layoutY="14.0" prefHeight="51.0" prefWidth="266.0" styleClass="buttonXO" text="Away Player" textAlignment="RIGHT">
+         <font>
+            <Font name="Bodoni MT Bold" size="41.0" />
+         </font>
+         <textFill>
+            <LinearGradient endX="0.719047619047619" endY="0.6757281553398058" startX="0.6990291262135923">
+               <stops>
+                  <Stop color="#807a09" />
+                  <Stop color="#ffaa00" offset="1.0" />
+               </stops>
+            </LinearGradient>
+         </textFill>
+      </Label>
+      <Line endX="155.0" endY="-51.0" layoutX="235.0" layoutY="165.0" startX="155.0" startY="396.0" stroke="AQUA" strokeWidth="5.0" styleClass="line" />
+      <Line endX="155.0" endY="-53.0" layoutX="386.0" layoutY="166.0" startX="155.0" startY="394.0" stroke="AQUA" strokeWidth="5.0" styleClass="line" />
+      <Line endX="-228.0" endY="397.0" layoutX="473.0" layoutY="-136.0" startX="213.0" startY="397.0" stroke="AQUA" strokeWidth="5.0" styleClass="line" />
+      <Line endX="-227.0" endY="397.0" layoutX="472.0" layoutY="16.0" startX="214.0" startY="397.0" stroke="AQUA" strokeWidth="5.0" styleClass="line" />
+      <Button layoutX="497.0" layoutY="573.0" mnemonicParsing="false" onAction="#back" prefHeight="50.0" prefWidth="145.0" style="-fx-background-color: #216974; -fx-background-radius: 30px;" text="Back" textFill="WHITE">
+         <font>
+            <Font size="21.0" />
+         </font>
+      </Button>
+      <Button fx:id="Play" layoutX="291.0" layoutY="573.0" mnemonicParsing="false" onAction="#play" prefHeight="50.0" prefWidth="168.0" style="-fx-background-color: #216974; -fx-background-radius: 30px;" text="Play the game" textFill="WHITE">
+         <font>
+            <Font size="21.0" />
+         </font>
+      </Button>
+      <AnchorPane layoutX="244.0" layoutY="112.0" maxWidth="920.0" prefHeight="443.0" prefWidth="401.0" style="-fx-background-color: transparent;" styleClass="border">
+         <children>
+            <Button id="1" fx:id="pos1" layoutX="2.0" mnemonicParsing="false" onMouseClicked="#nothing" prefHeight="146.0" prefWidth="138.0" style="-fx-background-color: transparent;" styleClass="buttonXO">
+               <font>
+                  <Font name="Andalus" size="57.0" />
+               </font>
+               <textFill>
+                  <LinearGradient endX="1.0" endY="1.0">
+                     <stops>
+                        <Stop color="RED" />
+                        <Stop color="BLACK" offset="1.0" />
+                     </stops>
+                  </LinearGradient>
+               </textFill>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+            <Button id="2" fx:id="pos2" layoutX="152.0" mnemonicParsing="false" onMouseClicked="#nothing" prefHeight="146.0" prefWidth="138.0" style="-fx-background-color: transparent;" styleClass="buttonXO">
+               <font>
+                  <Font name="Andalus" size="57.0" />
+               </font>
+               <textFill>
+                  <LinearGradient endX="1.0" endY="1.0">
+                     <stops>
+                        <Stop color="RED" />
+                        <Stop color="BLACK" offset="1.0" />
+                     </stops>
+                  </LinearGradient>
+               </textFill>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+            <Button id="3" fx:id="pos3" layoutX="303.0" mnemonicParsing="false" onMouseClicked="#nothing" prefHeight="146.0" prefWidth="138.0" style="-fx-background-color: transparent;" styleClass="buttonXO">
+               <font>
+                  <Font name="Andalus" size="57.0" />
+               </font>
+               <textFill>
+                  <LinearGradient endX="1.0" endY="1.0">
+                     <stops>
+                        <Stop color="RED" />
+                        <Stop color="BLACK" offset="1.0" />
+                     </stops>
+                  </LinearGradient>
+               </textFill>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+            <Button id="6" fx:id="pos6" layoutX="303.0" layoutY="152.0" mnemonicParsing="false" onMouseClicked="#nothing" prefHeight="146.0" prefWidth="138.0" style="-fx-background-color: transparent;" styleClass="buttonXO">
+               <font>
+                  <Font name="Andalus" size="57.0" />
+               </font>
+               <textFill>
+                  <LinearGradient endX="1.0" endY="1.0">
+                     <stops>
+                        <Stop color="RED" />
+                        <Stop color="BLACK" offset="1.0" />
+                     </stops>
+                  </LinearGradient>
+               </textFill>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+            <Button id="5" fx:id="pos5" layoutX="153.0" layoutY="152.0" mnemonicParsing="false" onMouseClicked="#nothing" prefHeight="146.0" prefWidth="138.0" style="-fx-background-color: transparent;" styleClass="buttonXO">
+               <font>
+                  <Font name="Andalus" size="57.0" />
+               </font>
+               <textFill>
+                  <LinearGradient endX="1.0" endY="1.0">
+                     <stops>
+                        <Stop color="RED" />
+                        <Stop color="BLACK" offset="1.0" />
+                     </stops>
+                  </LinearGradient>
+               </textFill>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+            <Button id="4" fx:id="pos4" layoutX="2.0" layoutY="152.0" mnemonicParsing="false" onMouseClicked="#nothing" prefHeight="146.0" prefWidth="138.0" style="-fx-background-color: transparent;" styleClass="buttonXO">
+               <font>
+                  <Font name="Andalus" size="57.0" />
+               </font>
+               <textFill>
+                  <LinearGradient endX="1.0" endY="1.0">
+                     <stops>
+                        <Stop color="RED" />
+                        <Stop color="BLACK" offset="1.0" />
+                     </stops>
+                  </LinearGradient>
+               </textFill>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+            <Button id="7" fx:id="pos7" layoutX="3.0" layoutY="304.0" mnemonicParsing="false" onMouseClicked="#nothing" prefHeight="146.0" prefWidth="138.0" style="-fx-background-color: transparent;" styleClass="buttonXO">
+               <font>
+                  <Font name="Andalus" size="57.0" />
+               </font>
+               <textFill>
+                  <LinearGradient endX="1.0" endY="1.0">
+                     <stops>
+                        <Stop color="RED" />
+                        <Stop color="BLACK" offset="1.0" />
+                     </stops>
+                  </LinearGradient>
+               </textFill>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+            <Button id="8" fx:id="pos8" layoutX="154.0" layoutY="305.0" mnemonicParsing="false" onMouseClicked="#nothing" prefHeight="146.0" prefWidth="138.0" style="-fx-background-color: transparent;" styleClass="buttonXO">
+               <font>
+                  <Font name="Andalus" size="57.0" />
+               </font>
+               <textFill>
+                  <LinearGradient endX="1.0" endY="1.0">
+                     <stops>
+                        <Stop color="RED" />
+                        <Stop color="BLACK" offset="1.0" />
+                     </stops>
+                  </LinearGradient>
+               </textFill>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+            <Button id="9" fx:id="pos9" layoutX="304.0" layoutY="304.0" mnemonicParsing="false" onMouseClicked="#nothing" prefHeight="146.0" prefWidth="138.0" style="-fx-background-color: transparent;" styleClass="buttonXO">
+               <font>
+                  <Font name="Andalus" size="57.0" />
+               </font>
+               <textFill>
+                  <LinearGradient endX="1.0" endY="1.0">
+                     <stops>
+                        <Stop color="RED" />
+                        <Stop color="BLACK" offset="1.0" />
+                     </stops>
+                  </LinearGradient>
+               </textFill>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+         </children>
+      </AnchorPane>
+      <Label fx:id="playerSign" layoutX="722.0" layoutY="93.0" prefHeight="77.0" prefWidth="36.0" styleClass="buttonXO" textAlignment="RIGHT">
+         <font>
+            <Font name="Bodoni MT Bold" size="34.0" />
+         </font>
+         <textFill>
+            <LinearGradient endX="0.719047619047619" endY="0.19999999999999996">
+               <stops>
+                  <Stop color="#8f0085" />
+                  <Stop color="WHITE" offset="1.0" />
+               </stops>
+            </LinearGradient>
+         </textFill>
+      </Label>
+      <Label fx:id="opponenPlayerSign" layoutX="60.0" layoutY="116.0" prefHeight="66.0" prefWidth="57.0" styleClass="buttonXO" textAlignment="RIGHT">
+         <font>
+            <Font name="Bodoni MT Bold" size="34.0" />
+         </font>
+         <textFill>
+            <LinearGradient endX="0.719047619047619" endY="0.19999999999999996">
+               <stops>
+                  <Stop color="#8f0085" />
+                  <Stop color="WHITE" offset="1.0" />
+               </stops>
+            </LinearGradient>
+         </textFill>
+      </Label>
+      <Label fx:id="homeNameLabel" alignment="CENTER" layoutX="683.0" layoutY="66.0" prefHeight="46.0" prefWidth="150.0" styleClass="buttonXO" textAlignment="CENTER">
+         <font>
+            <Font name="System Bold" size="31.0" />
+         </font>
+      </Label>
+      <Label fx:id="opponentNameLabel" alignment="CENTER" layoutX="60.0" layoutY="66.0" prefHeight="46.0" prefWidth="150.0" styleClass="buttonXO" textAlignment="RIGHT">
+         <font>
+            <Font name="System Bold" size="31.0" />
+         </font>
+      </Label>
+      <Label layoutX="642.0" layoutY="14.0" prefHeight="51.0" prefWidth="266.0" styleClass="buttonXO" text="Home Player" textAlignment="RIGHT">
+         <font>
+            <Font name="Bodoni MT Bold" size="41.0" />
+         </font>
+         <textFill>
+            <LinearGradient endX="0.719047619047619" endY="0.6757281553398058" startX="0.6990291262135923">
+               <stops>
+                  <Stop color="#807a09" />
+                  <Stop color="#ffaa00" offset="1.0" />
+               </stops>
+            </LinearGradient>
+         </textFill>
+      </Label>
+      <Label layoutX="84.0" layoutY="127.0" prefHeight="117.0" prefWidth="83.0" styleClass="buttonXO" text="O" textAlignment="RIGHT">
+         <font>
+            <Font name="Bodoni MT Bold" size="96.0" />
+         </font>
+         <textFill>
+            <LinearGradient endX="0.719047619047619" endY="0.6757281553398058" startX="0.6990291262135923">
+               <stops>
+                  <Stop color="#807a09" />
+                  <Stop color="#ffaa00" offset="1.0" />
+               </stops>
+            </LinearGradient>
+         </textFill>
+      </Label>
+      <Label layoutX="750.0" layoutY="124.0" prefHeight="117.0" prefWidth="83.0" styleClass="buttonXO" text="X" textAlignment="RIGHT">
+         <font>
+            <Font name="Bodoni MT Bold" size="96.0" />
+         </font>
+         <textFill>
+            <LinearGradient endX="0.719047619047619" endY="0.6757281553398058" startX="0.6990291262135923">
+               <stops>
+                  <Stop color="#807a09" />
+                  <Stop color="#ffaa00" offset="1.0" />
+               </stops>
+            </LinearGradient>
+         </textFill>
+      </Label>
+   </children>
+</AnchorPane>
