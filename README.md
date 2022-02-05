@@ -77,7 +77,6 @@ This section should list any major frameworks/libraries used to bootstrap your p
 
 * [Java](https://java.com/)
 * [JavaFX](https://www.oracle.com/java/technologies/javase/javafx-overview.html)
-* [MySQL](https://dev.mysql.com/)
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
@@ -90,8 +89,9 @@ To get a local copy up and running follow these simple example steps.
 
 ### Prerequisites
 
-project was built under [NetBeans 8.2](https://netbeans-ide.informer.com/8.2/), though any ide can be used
-MySql or xamp for the database
+  -project was built under [NetBeans 8.2](https://netbeans-ide.informer.com/8.2/), though any ide can be used
+  
+  -[MySQL](https://dev.mysql.com/) or xamp for the database
 
 ### Installation
 
