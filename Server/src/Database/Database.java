@@ -22,11 +22,11 @@ import java.util.Date;
 
 public class Database {
 
-     static Connection con =null;
-    static String db_name="xo_netwok_game";
-    static String url="jdbc:mysql://localhost:3306/"+db_name;
-    static String username="root";//////your name
-    static String password="";//////your password
+    static Connection con = null;
+    static String db_name = "xo_network_game";
+    static String url = "jdbc:mysql://localhost:3306/" + db_name;
+    static String username = "[ph your db login name]";//////your db login name
+    static String password = "[PH your db login password";//////your db login password
 
     //this function created to connect to the database
     public static void dbConnect() throws ClassNotFoundException, InstantiationException, IllegalAccessException, SQLException {
